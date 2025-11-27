@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: mhealth-backend
+    env: python
+    repo: https://github.com/ianokoth003/mHealth-app.git
+    branch: main
+    rootDir: backend
+    buildCommand: pip install -r requirements.txt
+    startCommand: ./start.sh
+    plan: free
